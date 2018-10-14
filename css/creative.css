@@ -178,7 +178,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/portfolio/fullsize/1.jpg");
   background-position: center center;
   background-size: cover;
 }
@@ -223,6 +223,10 @@ header.masthead p {
 .service-box {
   max-width: 400px;
 }
+
+/*Modify portfolio using Agency
+https://github.com/BlackrockDigital/startbootstrap-agency
+to open new page rather than only picture */
 
 .portfolio-box {
   position: relative;
