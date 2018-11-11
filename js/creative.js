@@ -73,6 +73,14 @@
     scale: 0
   });
 
+  twttr.widgets.createTimeline(
+  {
+    sourceType: "profile",
+    screenName: "TwitterDev"
+  },
+  document.getElementById("container")
+);
+
   // Magnific popup calls
   $('.popup-gallery').magnificPopup({
     delegate: 'a',
@@ -88,5 +96,13 @@
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
+
+  // Hide navbar when modals trigger
+  $('.portfolio-modal').on('show.bs.modal', function(e) {
+    $('.navbar').addClass('d-none');
+  })
+  $('.portfolio-modal').on('hidden.bs.modal', function(e) {
+    $('.navbar').removeClass('d-none');
+  })
 
 })(jQuery); // End of use strict
