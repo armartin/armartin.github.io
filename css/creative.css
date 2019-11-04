@@ -302,7 +302,7 @@ Add Nov 4, 2019
   overflow: hidden;
   position: relative;
   text-align: center;
-  cursor: default;
+  cursor: pointer;
 }
 
 .hovereffect .overlay {
